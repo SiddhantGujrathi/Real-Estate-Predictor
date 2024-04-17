@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Data</title>
+	
+	    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+			background-image: url('https://www.hdwallpapers.in/download/building_city_light_new_york_night_reflection_skyscraper_hd_travel-1920x1080.jpg');
+        }
+
+        h2 {
+            text-align: center;
+			color:#fff;
+        }
+
+        form {
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+		
+
+        table {
+            width: 100%;
+        }
+
+        input[type="number"]{
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+			color:#fff;
+        }
+		
+		img{
+		border-radius:20%;
+		}
+		
+		.header {
+        background-color: #4CAF50; /* Background color for the shape */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 30px;
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+	
+	.powered-by {
+        text-align: center;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .powered-by span {
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.5);
+    }
+		
+	
+    </style>
+
+</head>
+<body>
+    <h2>Housing Data</h2>
+	<h4 class="powered-by">POWERED BY <span>SIDTECH</span></h4>
+<div>
+
+    <form action="/result" method="POST">
+		<table align=center>
+        <tr>
+		<td><img src="https://gumlet.assettype.com/freepressjournal%2F2019-09%2Fe0a056cc-f2e1-4f0a-b441-2dc6559aa419%2FArrested_4.jpg?w=1200&auto=format%2Ccompress&ogImage=true" width="50", height="50"></td>
+		<td><label for="CRIM">Crime Rate of Town</label></td>
+        <td><input type="number" id="CRIM" name="CRIM"></td>
+		</tr>
+
+		<tr>
+		<td><img src="https://th.bing.com/th/id/OIP.-pZMMQRMAlmOsJgnzF1SXwHaFj?rs=1&pid=ImgDetMain" width="50", height="50"></td>
+        <td><label for="ZN">Residential Land Zoned</label></td>
+        <td><input type="number" id="ZN" name="ZN"></td>
+		</tr>
+      
+		<tr>
+		<td><img src="https://th.bing.com/th/id/OIP.Sy7NjmGLA258-mOxvxvp4gHaHU?rs=1&pid=ImgDetMain" width="50", height="50"></td>
+        <td><label for="INDUS">Non-Retail Business Proportion</label></td>
+        <td><input type="number" id="INDUS" name="INDUS"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://www.pngall.com/wp-content/uploads/9/River-PNG-Free-Download.png" width="50", height="50">
+        <td><label for="CHAS">Charles River Proximity</label></td>
+        <td colspan=2>
+		<input type="radio" id="CHAS" name="CHAS" value="0">
+		<label for="CHAS">0</label>
+		<input type="radio" id="CHAS" name="CHAS" value="1">
+		<label for="CHAS">1</label><br></td>
+		</tr>
+		
+       
+		<tr>
+		<td><img src="https://st3.depositphotos.com/1062321/33067/v/450/depositphotos_330678798-stock-illustration-nitric-oxide-gas-molecule-icon.jpg" width="50", height="50">
+        <td><label for="NOX">Nitric Oxides Concentration</label></td>
+        <td><input type="number" id="NOX" name="NOX"></td>
+		</tr>
+       
+		<tr>
+		<td><img src="https://th.bing.com/th/id/OIP.POkNiyZkPPcz2OpCtW2A6gHaFV?rs=1&pid=ImgDetMain" width="50", height="50">
+        <td><label for="RM">Average Rooms per Dwelling</label></td>
+        <td><input type="number" id="RM" name="RM"></td>
+		</tr>
+       
+		<tr>
+		<td><img src="https://cdn2.iconfinder.com/data/icons/house-building-4/496/house-measurement-scale-precision-proportion-512.png" width="50", height="50">
+        <td><label for="AGE">Proportion of Old Units</label></td>
+        <td><input type="number" id="AGE" name="AGE"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://cdn4.iconfinder.com/data/icons/circle-map-pins/512/map_pin_distance_route_planification_home_to_job-512.png" width="50", height="50">
+        <td><label for="DIS">Distance to Employment Centers</label></td>
+        <td><input type="number" id="DIS" name="DIS"></td>
+		</tr>
+     
+		<tr>
+		<td><img src="https://th.bing.com/th/id/R.4a16cda4cc3dddfa8e5b6a0e5e9ad0c0?rik=7TnYAzy53a%2fu1w&riu=http%3a%2f%2fpngimg.com%2fuploads%2froad%2froad_PNG46.png&ehk=iKukmYiVT2Z2xg0qR1bLvmZrtKHiBGzbAdpL%2fbZDGH8%3d&risl=&pid=ImgRaw&r=0" width="50", height="50">
+        <td><label for="RAD">Accessibility to Highways</label></td>
+        <td><input type="number" id="RAD" name="RAD"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://www.clipartkey.com/mpngs/m/116-1165486_income-tax-return-icon.png" width="50", height="50">
+        <td><label for="TAX">Property Tax Rate</label></td>
+        <td><input type="number" id="TAX" name="TAX"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://cdn2.iconfinder.com/data/icons/back-to-school-filled-outline-1/64/teacher_female-1024.png" width="50", height="50">
+        <td><label for="PTRATIO">Pupil-Teacher Ratio</label></td>
+
+        <td><input type="number" id="PTRATIO" name="PTRATIO"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://www.pngmart.com/files/7/Percentage-Transparent-Background.png" width="50", height="50">
+        <td><label for="B1000">Proportion of Blacks</label></td>
+        <td><input type="number" id="B1000" name="B1000"></td>
+		</tr>
+        
+		<tr>
+		<td><img src="https://cdn-icons-png.flaticon.com/512/838/838674.png" width="50", height="50">
+        <td><label for="LSTAT" size=30dp>Lower Status Percentage</label></td>
+        <td><input type="number" id="LSTAT" name="LSTAT"></td>
+		</tr>
+		
+		<tr>
+        <td></td>
+        <td></td>
+		</tr>
+       
+		<tr align=center>
+        <td colspan=3><input type="submit" value="Submit"> &nbsp &nbsp &nbsp
+		<input type="reset" value="Clear"></td>
+		</tr>
+		</table>
+    </form>
+
+</div>
+
+<div class="header">
+
+    <h1>Median House Price in Thousands of Dollars</h1>
+    <h1>{{prediction}}</h1>
+<div>
+</body>
+</html>
